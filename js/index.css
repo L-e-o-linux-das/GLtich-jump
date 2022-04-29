@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: aquamarine;
+    background-image: url("bg_1.jpg");
+}
+
+
+.game{
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+    margin: auto;
+    background-image: url("bg.png");
+}
+#character{
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    position:relative;
+    top: 240px;
+    background-image: url("player_1.jpg");
+}
+.animate{
+    animation: jump 0.3s linear;
+}
+@keyframes jump{
+    0%{top: 200px;}
+    30%{top: 150px;}
+    70%{top: 150px;}
+    100%{top: 200px;}
+}
+
+#block{
+    background-color: blue;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 200px;
+    left: 500px;
+    animation: block 1s infinite linear;
+    background-image: url("enemy_1.jpg");
+}
+@keyframes block{
+    0%{left: 500px}
+    100%{left: -20px}
+}
+p{
+    text-align: center;
+}
